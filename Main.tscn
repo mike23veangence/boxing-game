@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://btclgn0p440g"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_k2agb"]
+size = Vector3(7, 0.3, 7)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_k2agb"]
+top_radius = 0.12
+bottom_radius = 0.12
+height = 1.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_samn3"]
+size = Vector3(6.4, 0.08, 0.08)
+
+[node name="Node3D" type="Node3D" unique_id=788471504]
+
+[node name="RingFloor" type="MeshInstance3D" parent="." unique_id=810587735]
+mesh = SubResource("BoxMesh_k2agb")
+
+[node name="Post1" type="MeshInstance3D" parent="." unique_id=157379076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2, 1.05, -3.2)
+mesh = SubResource("CylinderMesh_k2agb")
+
+[node name="Post2" type="MeshInstance3D" parent="." unique_id=90928004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2, 1.05, -3.2)
+mesh = SubResource("CylinderMesh_k2agb")
+
+[node name="Post3" type="MeshInstance3D" parent="." unique_id=183210084]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2, 1.05, 3.2)
+mesh = SubResource("CylinderMesh_k2agb")
+
+[node name="Post4" type="MeshInstance3D" parent="." unique_id=673965886]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2, 1.05, 3.2)
+mesh = SubResource("CylinderMesh_k2agb")
+
+[node name="RopeFront1" type="MeshInstance3D" parent="." unique_id=91337463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, -3.2)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeFront2" type="MeshInstance3D" parent="." unique_id=1974747190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, -3.2)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeFront3" type="MeshInstance3D" parent="." unique_id=1360564814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, -3.2)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeRight1" type="MeshInstance3D" parent="." unique_id=826401947]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.2, 0.55, 0)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeRight2" type="MeshInstance3D" parent="." unique_id=1486518860]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.2, 0.95, 0)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeRight3" type="MeshInstance3D" parent="." unique_id=1925967664]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.2, 1.35, 0)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeBack1" type="MeshInstance3D" parent="." unique_id=933301820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 3.2)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeBack2" type="MeshInstance3D" parent="." unique_id=755502090]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 3.2)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeBack3" type="MeshInstance3D" parent="." unique_id=617475565]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.35, 3.2)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeLeft1" type="MeshInstance3D" parent="." unique_id=1886531457]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2, 0.55, 0)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeLeft2" type="MeshInstance3D" parent="." unique_id=327470203]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2, 0.95, 0)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="RopeLeft3" type="MeshInstance3D" parent="." unique_id=2061086935]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.2, 1.35, 0)
+mesh = SubResource("BoxMesh_samn3")
+
+[node name="camera" type="Camera3D" parent="." unique_id=1963770731]
+transform = Transform3D(1, 0, 0, 0, 0.90630776, 0.42261827, 0, -0.42261827, 0.90630776, 0, 5, 8)
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=661202506]
